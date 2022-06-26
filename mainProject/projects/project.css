@@ -1,0 +1,32 @@
+.projectSection__title {
+  text-align: center;
+}
+.projectSection__table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+.projectSection__innerTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+  list-style: none;
+  margin: 10px;
+}
+.projectSection__innerTable_tableTop {
+  height: 100px;
+}
+.projectSection__innerTable_tableTop-image {
+  align-items: flex-end;
+}
+.projectSection__innerTable_tableTop-description {
+  align-items: flex-end;
+}
+.projectSection__innerTable_tableBottom_title {
+  align-items: flex-end;
+}
+.projectSection__innerTable_tableBottom_button {
+  align-items: flex-end;
+}
+
+/*# sourceMappingURL=project.css.map */

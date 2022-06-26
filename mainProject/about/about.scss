@@ -1,0 +1,20 @@
+.aboutSection {
+  &__title {
+    text-align: center;
+    font-weight: bold;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &_image {
+      background-color: red;
+      align-items: center;
+    }
+    &_paragraph {
+      background-color: blue;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

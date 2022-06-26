@@ -1,0 +1,16 @@
+.contactSection {
+  &__title {
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    &-title {
+      font-weight: bold;
+      margin: 10px;
+    }
+    &-link {
+      margin: 10px;
+    }
+  }
+}
