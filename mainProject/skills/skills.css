@@ -1,0 +1,21 @@
+.skillsSection__title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  list-style: none;
+}
+.skillsSection__list--title {
+  text-align: center;
+}
+.skillsSection__list--list {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.skillsSection__list--list-title {
+  list-style: none;
+}
+.skillsSection__list--list-items {
+  list-style: none;
+}
+
+/*# sourceMappingURL=skills.css.map */

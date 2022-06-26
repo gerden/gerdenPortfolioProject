@@ -1,0 +1,22 @@
+// .topMenu {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+
+//   border: 2px solid black;
+// }
+
+.body {
+  &__header {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    &--title {
+      text-align: center;
+      font-weight: bold;
+    }
+    &--paragraph {
+      text-align: center;
+      // will change alignment leter when I have a picture
+    }
+  }
+}
