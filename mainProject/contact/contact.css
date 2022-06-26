@@ -1,0 +1,16 @@
+.contactSection__title {
+  text-align: center;
+}
+.contactSection__list {
+  display: flex;
+  justify-content: center;
+}
+.contactSection__list-title {
+  font-weight: bold;
+  margin: 10px;
+}
+.contactSection__list-link {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=contact.css.map */

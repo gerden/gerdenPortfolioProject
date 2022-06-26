@@ -3,7 +3,21 @@
   font-weight: bold;
 }
 .aboutSection__content {
-  text-align: right;
+  display: flex;
+  justify-content:center;
+}
+.aboutSection__content_image {
+  width: 30%;
+  max-height: 200px;
+  max-width: 150px;
+  min-width: 45px;
+  min-height: 60px;
+  margin: 20px;
+}
+.aboutSection__content_paragraph {
+  max-height: 200px;
+  max-width: 350px;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=about.css.map */

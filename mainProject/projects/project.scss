@@ -1,0 +1,37 @@
+.projectSection {
+  &__title {
+    text-align: center;
+  }
+  &__table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+  }
+
+  &__innerTable {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+    list-style: none;
+    margin: 10px;
+
+    &_tableTop {
+      height: 100px;
+      &-image {
+        align-items: flex-end;
+      }
+      &-description {
+        align-items: flex-end;
+      }
+    }
+
+    &_tableBottom {
+      &_title {
+        align-items: flex-end;
+      }
+      &_button {
+        align-items: flex-end;
+      }
+    }
+  }
+}
