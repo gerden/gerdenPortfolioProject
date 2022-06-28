@@ -31,6 +31,10 @@
       }
       &_button {
         align-items: flex-end;
+        &_icon {
+          height: 30px;
+          width: 30px;
+        }
       }
     }
   }
