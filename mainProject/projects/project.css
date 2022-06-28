@@ -28,5 +28,7 @@
 .projectSection__innerTable_tableBottom_button {
   align-items: flex-end;
 }
-
-/*# sourceMappingURL=project.css.map */
+.projectSection__innerTable_tableBottom_button_icon {
+  height: 30px;
+  width: 30px;
+}
