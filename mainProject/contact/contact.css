@@ -1,9 +1,15 @@
+.contactSection {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 .contactSection__title {
   text-align: center;
 }
 .contactSection__list {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .contactSection__list-title {
   font-weight: bold;
@@ -14,5 +20,3 @@
   height: 30px;
   width: 30px;
 }
-
-/*# sourceMappingURL=contact.css.map */

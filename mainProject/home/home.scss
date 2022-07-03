@@ -1,22 +1,360 @@
-// .topMenu {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
+@use "style";
 
-//   border: 2px solid black;
-// }
+body {
+  padding: 0px;
+  margin: 0px;
+}
 
-.body {
-  &__header {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    &--title {
-      text-align: center;
-      font-weight: bold;
-    }
-    &--paragraph {
-      text-align: center;
-      // will change alignment leter when I have a picture
+.topMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+
+  border: 2px solid white;
+  &_item {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: white;
+      background-color: style.$hover-color;
+      border-radius: 5px;
+      padding: 2px;
     }
   }
+}
+
+.intro {
+  padding: 10px;
+  &__item {
+    min-height: 100vh;
+    font-family: style.$title-font;
+    display: grid;
+    align-items: center;
+    background-color: #0c111a;
+    color: white;
+    @media only screen and (max-width: 300px) {
+    }
+    &_group {
+      text-align: center;
+      &_title {
+        font-weight: bold;
+      }
+      &_paragraph {
+      }
+      &_button {
+        color: rgb(255, 255, 255);
+        background-color: style.$hover-color;
+        border-radius: 10px;
+        padding: 5px;
+        &:hover {
+          border: 2px solid white;
+        }
+      }
+    }
+  }
+}
+
+.aboutSection {
+  padding: 10px;
+  min-height: 100vh;
+  background-color: white;
+  align-items: center;
+  &__title {
+    text-align: center;
+    font-family: style.$title-font;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &_item {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      height: 100%;
+      &-image {
+        display: flex;
+        justify-content: right;
+        @media only screen and (max-width: style.$small-about-picture) {
+          width: 50px;
+          height: 50px;
+        }
+        @media only screen and (min-width: ( style.$small-about-picture + 1)) and (max-width: style.$medium-about-picture) {
+          width: 100px;
+          height: 100px;
+        }
+        @media only screen and (min-width: ( style.$medium-about-picture + 1)) and (max-width: style.$large-about-picture) {
+          width: 200px;
+          height: 200px;
+        }
+        @media only screen and (min-width: ( style.$large-about-picture + 1)) {
+          width: 400px;
+          height: 400px;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 50%;
+      }
+      &_paragraph {
+        display: flex;
+        align-items: center;
+
+        text-align: left;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.skillsSection {
+  padding: 10px;
+  background-color: #f2f2f2;
+  &__title {
+    text-align: center;
+    font-family: style.$title-font;
+    font-weight: bold;
+
+    list-style: none;
+  }
+  &__list {
+    padding: 10px;
+    &--title {
+      text-align: center;
+    }
+    &--list {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+
+      &-title {
+        list-style: none;
+      }
+      &-items {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.projectSection {
+  padding: 10px;
+  background-color: #b8b8b8;
+  &__title {
+    text-align: center;
+    font-family: style.$title-font;
+  }
+  &__table {
+    display: grid;
+
+    @media only screen and (max-width: style.$medium-about-picture) {
+      grid-template-columns: 1fr;
+    }
+    @media only screen and (min-width: ( style.$medium-about-picture + 1)) and (max-width: style.$large-about-picture) {
+      grid-template-columns: 1fr;
+    }
+    @media only screen and (min-width: ( style.$large-about-picture + 1)) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+
+    &_innerTable {
+      border: 2px solid white;
+      list-style: none;
+      padding: 20px;
+      margin: 20px;
+      border: white solid 2px;
+      width: 80%;
+      background-color: black;
+      color: white;
+      text-align: center;
+
+      &_picture {
+        width: 100%;
+      }
+
+      &_title {
+        width: 100%;
+      }
+      &_details {
+        width: 100%;
+      }
+      &_links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        &_item {
+          margin: 0px 10px;
+          border: white solid 3px;
+          background-color: white;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          &:hover {
+            background-color: style.$hover-color;
+            border: style.$hover-color solid 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contactSection {
+  @media only screen and (max-width: style.$large-about-picture) {
+    padding: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    &__title {
+      text-align: center;
+      font-family: style.$title-font;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+      &-title {
+        font-weight: bold;
+        margin: 10px;
+      }
+      &-link {
+        align-items: center;
+        margin: 10px;
+        margin: 0px 10px;
+        padding: 5px;
+        border: black solid 3px;
+        background-color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        &:hover {
+          background-color: style.$hover-color;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: ( style.$large-about-picture + 1)) {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &__title {
+      text-align: center;
+      font-family: style.$title-font;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+      &-title {
+        font-weight: bold;
+        margin: 10px;
+      }
+      &-link {
+        align-items: center;
+        margin: 10px;
+        margin: 0px 10px;
+        padding: 5px;
+        border: black solid 3px;
+        background-color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        &:hover {
+          background-color: style.$hover-color;
+        }
+      }
+    }
+  }
+
+  // padding: 10px;
+  // align-items: center;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // justify-content: center;
+  // &__title {
+  //   text-align: center;
+  //   font-family: style.$title-font;
+  // }
+
+  // &__list {
+  //   display: flex;
+  //   justify-content: center;
+
+  //   align-items: center;
+  //   &-title {
+  //     font-weight: bold;
+  //     margin: 10px;
+  //   }
+  //   &-link {
+  //     align-items: center;
+  //     margin: 10px;
+  //     margin: 0px 10px;
+  //     padding: 5px;
+  //     border: black solid 3px;
+  //     background-color: white;
+  //     border-radius: 50%;
+  //     width: 20px;
+  //     height: 20px;
+  //     &:hover {
+  //       background-color: style.$hover-color;
+  //     }
+  //   }
+  // }
+
+  //   padding: 10px;
+  // align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // &__title {
+  //   text-align: center;
+  //   font-family: style.$title-font;
+  // }
+
+  // &__list {
+  //   display: flex;
+  //   justify-content: center;
+
+  //   align-items: center;
+  //   &-title {
+  //     font-weight: bold;
+  //     margin: 10px;
+  //   }
+  //   &-link {
+  //     align-items: center;
+  //     margin: 10px;
+  //     margin: 0px 10px;
+  //     padding: 5px;
+  //     border: black solid 3px;
+  //     background-color: white;
+  //     border-radius: 50%;
+  //     width: 20px;
+  //     height: 20px;
+  //     &:hover {
+  //       background-color: style.$hover-color;
+  //     }
+  //   }
+  // }
 }

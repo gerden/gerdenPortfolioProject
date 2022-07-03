@@ -1,13 +1,284 @@
-.body__header {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
-}
-.body__header--title {
-  text-align: center;
-  font-weight: bold;
-}
-.body__header--paragraph {
-  text-align: center;
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
-/*# sourceMappingURL=home.css.map */
+.topMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  border: 2px solid white;
+}
+.topMenu_item {
+  text-decoration: none;
+  color: black;
+}
+.topMenu_item:hover {
+  color: white;
+  background-color: rgb(7, 68, 192);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.intro {
+  padding: 10px;
+}
+.intro__item {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  align-items: center;
+  background-color: #0c111a;
+  color: white;
+}
+.intro__item_group {
+  text-align: center;
+}
+.intro__item_group_title {
+  font-weight: bold;
+}
+.intro__item_group_button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(7, 68, 192);
+  border-radius: 10px;
+  padding: 5px;
+}
+.intro__item_group_button:hover {
+  border: 2px solid white;
+}
+
+.aboutSection {
+  padding: 10px;
+  min-height: 100vh;
+  background-color: white;
+  align-items: center;
+}
+.aboutSection__title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aboutSection__content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.aboutSection__content_item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  height: 100%;
+}
+.aboutSection__content_item-image {
+  display: flex;
+  justify-content: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 200px) {
+  .aboutSection__content_item-image {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 201px) and (max-width: 400px) {
+  .aboutSection__content_item-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  .aboutSection__content_item-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .aboutSection__content_item-image {
+    width: 400px;
+    height: 400px;
+  }
+}
+.aboutSection__content_item_paragraph {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.skillsSection {
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+.skillsSection__title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  list-style: none;
+}
+.skillsSection__list {
+  padding: 10px;
+}
+.skillsSection__list--title {
+  text-align: center;
+}
+.skillsSection__list--list {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.skillsSection__list--list-title {
+  list-style: none;
+}
+.skillsSection__list--list-items {
+  list-style: none;
+}
+
+.projectSection {
+  padding: 10px;
+  background-color: #b8b8b8;
+}
+.projectSection__title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.projectSection__table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+}
+@media only screen and (max-width: 400px) {
+  .projectSection__table {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  .projectSection__table {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .projectSection__table {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.projectSection__table_innerTable {
+  border: 2px solid white;
+  list-style: none;
+  padding: 20px;
+  margin: 20px;
+  border: white solid 2px;
+  width: 80%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.projectSection__table_innerTable_picture {
+  width: 100%;
+}
+.projectSection__table_innerTable_title {
+  width: 100%;
+}
+.projectSection__table_innerTable_details {
+  width: 100%;
+}
+.projectSection__table_innerTable_links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.projectSection__table_innerTable_links_item {
+  margin: 0px 10px;
+  border: white solid 3px;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.projectSection__table_innerTable_links_item:hover {
+  background-color: rgb(7, 68, 192);
+  border: rgb(7, 68, 192) solid 3px;
+}
+
+@media only screen and (max-width: 800px) {
+  .contactSection {
+    padding: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .contactSection__title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .contactSection__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactSection__list-title {
+    font-weight: bold;
+    margin: 10px;
+  }
+  .contactSection__list-link {
+    align-items: center;
+    margin: 10px;
+    margin: 0px 10px;
+    padding: 5px;
+    border: black solid 3px;
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .contactSection__list-link:hover {
+    background-color: rgb(7, 68, 192);
+  }
+}
+@media only screen and (min-width: 801px) {
+  .contactSection {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .contactSection__title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .contactSection__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactSection__list-title {
+    font-weight: bold;
+    margin: 10px;
+  }
+  .contactSection__list-link {
+    align-items: center;
+    margin: 10px;
+    margin: 0px 10px;
+    padding: 5px;
+    border: black solid 3px;
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .contactSection__list-link:hover {
+    background-color: rgb(7, 68, 192);
+  }
+}
