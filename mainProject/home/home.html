@@ -4,38 +4,345 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="styleSheet" href="../home/home.css" />
     <link rel="styleSheet" href="../menu/menu.css" />
-    <!-- <link rel="styleSheetAbout" href="about.css" />
-    <link rel="styleSheetAbout" href="menu.css" /> -->
+    <link rel="styleSheet" href="../home/home.css" />
     <title>Portfolio Project</title>
   </head>
   <body>
     <nav>
       <ul class="topMenu">
         <li>
-          <a href="../home/home.html">Home</a>
+          <a class="topMenu_item" href="#home">Home</a>
         </li>
         <li>
-          <a href="../about/about.html">About</a>
+          <a class="topMenu_item" href="#aboutSection">About</a>
         </li>
         <li>
-          <a href="../skills/skills.html">Skills</a>
+          <a class="topMenu_item" href="#skillsSection">Skills</a>
         </li>
         <li>
-          <a href="../projects/projects.html">Project</a>
+          <a class="topMenu_item" href="#projectSection">Project</a>
         </li>
         <li>
-          <a href="../contact/contact.html">Contact</a>
+          <a class="topMenu_item" href="#contactSection">Contact</a>
         </li>
       </ul>
     </nav>
 
-    <header class="body__header">
-      <h1 class="body__header body__header--title">Hi i'm Adam</h1>
-      <p class="body__header body__header--paragraph">
-        I'm a software engineer currently studing with _nology
-      </p>
+    <header id="home" class="intro">
+      <div class="intro__item">
+        <div class="intro__item_group">
+          <h1 class="intro__item_group intro__item_group_title">Hi i'm Adam</h1>
+          <p class="intro__item_group intro__item_group_paragraph">
+            I'm a software engineer currently studing with _nology
+          </p>
+          <a
+            class="intro__item_group intro__item_group_button"
+            href="#aboutSection"
+            >About Me</a
+          >
+        </div>
+      </div>
     </header>
+
+    <section id="aboutSection" class="aboutSection">
+      <h1 class="aboutSection__title">About Me</h1>
+      <div class="aboutSection__content">
+        <div class="aboutSection__content_item">
+          <img
+            class="aboutSection__content_item-image"
+            src="../pictures/selfPIctureSquare.jpg"
+          />
+
+          <p class="aboutSection__content_item_paragraph">
+            My name is Adam. I am from Jamestown, South Australia and have
+            finished my Bachelor of Software Engineering Course at the
+            University of South Australia.
+            <br />
+            <br />
+            During my studies I took part in a range of different kind of
+            projects ranging from AI based path finder, to child item search
+            programs, to 3d bone modelling software. During my final year I also
+            took work experience at the software company blue crystal, where I
+            was able to learn a lot and help with a things such as creating a
+            night mode for one of their main project management application.
+            <br />
+            <br />
+            Outside of coding, I enjoy reading as well as Netflix and have been
+            trying to get into running for the challenge of it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skillsSection" class="skillsSection">
+      <h1 class="skillsSection__title">Skills</h1>
+
+      <ul class="skillsSection__list">
+        <h2 class="skillsSection__list--title">Skills List</h2>
+        <li class="skillsSection__list--list skillsSection__list--list-title">
+          <h3>Title</h3>
+          <h3>Description</h3>
+        </li>
+        <li class="skillsSection__list--list skillsSection__list--list-items">
+          <h4>HTML</h4>
+          <p>
+            Hypertext Markup Language, a standardized system for tagging text
+            files to achieve font, colour, graphic, and hyperlink effects on
+            World Wide Web pages.
+          </p>
+        </li>
+        <li class="skillsSection__list--list skillsSection__list--list-items">
+          <h4>CSS</h4>
+          <p>
+            Cascading Style Sheets (CSS) is a stylesheet language used to
+            describe the presentation of a document written in HTML or XML
+          </p>
+        </li>
+        <li class="skillsSection__list--list skillsSection__list--list-items">
+          <h4>SCSS</h4>
+          <p>
+            Syntactically Awesome Style Sheet is the superset of CSS. SCSS is
+            the more advanced version of CSS
+          </p>
+        </li>
+        <li class="skillsSection__list--list skillsSection__list--list-items">
+          <h4>JAVA SCRIPT</h4>
+          <p>
+            Is an object-oriented computer programming language commonly used to
+            create interactive effects within web browsers.
+          </p>
+        </li>
+
+        <li class="skillsSection__list--list skillsSection__list--list-items">
+          <h4>SQL</h4>
+          <p>
+            Structured Query Language (SQL) is a standardized programming
+            language that is used to manage relational databases and perform
+            various operations on the data in them.
+          </p>
+        </li>
+
+        <li class="skillsSection__list--list skillsSection__list--list-items">
+          <h4>JAVA</h4>
+          <p>
+            Java is a high-level, class-based, object-oriented programming
+            language that is designed to have as few implementation dependencies
+            as possible.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projectSection" class="projectSection">
+      <h1 class="projectSection__title">Projects</h1>
+      <div class="projectSection__table">
+        <ul class="projectSection__table_innerTable">
+          <img
+            class="projectSection__table_innerTable_picture"
+            src="../pictures/pacMan.jpg"
+          />
+          <h2 class="projectSection__table_innerTable_title">
+            Pac Man Example
+          </h2>
+          <p class="projectSection__table_innerTable_details">
+            Pac-Man is a Japanese video game franchise created by Toru Iwatani,
+            the father of Pac-Man, but published, developed and owned by Bandai
+            Namco Entertainment.
+          </p>
+          <div class="projectSection__table_innerTable_links">
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/git icon.png"
+              />
+            </a>
+
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/icon.jpeg"
+              />
+            </a>
+          </div>
+        </ul>
+
+        <ul class="projectSection__table_innerTable">
+          <img
+            class="projectSection__table_innerTable_picture"
+            src="../pictures/pacMan.jpg"
+          />
+          <h2 class="projectSection__table_innerTable_title">
+            Pac Man Example
+          </h2>
+          <p class="projectSection__table_innerTable_details">
+            Pac-Man is a Japanese video game franchise created by Toru Iwatani,
+            the father of Pac-Man, but published, developed and owned by Bandai
+            Namco Entertainment.
+          </p>
+          <div class="projectSection__table_innerTable_links">
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/git icon.png"
+              />
+            </a>
+
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/icon.jpeg"
+              />
+            </a>
+          </div>
+        </ul>
+
+        <ul class="projectSection__table_innerTable">
+          <img
+            class="projectSection__table_innerTable_picture"
+            src="../pictures/pacMan.jpg"
+          />
+          <h2 class="projectSection__table_innerTable_title">
+            Pac Man Example
+          </h2>
+          <p class="projectSection__table_innerTable_details">
+            Pac-Man is a Japanese video game franchise created by Toru Iwatani,
+            the father of Pac-Man, but published, developed and owned by Bandai
+            Namco Entertainment.
+          </p>
+          <div class="projectSection__table_innerTable_links">
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/git icon.png"
+              />
+            </a>
+
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/icon.jpeg"
+              />
+            </a>
+          </div>
+        </ul>
+
+        <ul class="projectSection__table_innerTable">
+          <img
+            class="projectSection__table_innerTable_picture"
+            src="../pictures/pacMan.jpg"
+          />
+          <h2 class="projectSection__table_innerTable_title">
+            Pac Man Example
+          </h2>
+          <p class="projectSection__table_innerTable_details">
+            Pac-Man is a Japanese video game franchise created by Toru Iwatani,
+            the father of Pac-Man, but published, developed and owned by Bandai
+            Namco Entertainment.
+          </p>
+          <div class="projectSection__table_innerTable_links">
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/git icon.png"
+              />
+            </a>
+
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/icon.jpeg"
+              />
+            </a>
+          </div>
+        </ul>
+
+        <ul class="projectSection__table_innerTable">
+          <img
+            class="projectSection__table_innerTable_picture"
+            src="../pictures/pacMan.jpg"
+          />
+          <h2 class="projectSection__table_innerTable_title">
+            Pac Man Example
+          </h2>
+          <p class="projectSection__table_innerTable_details">
+            Pac-Man is a Japanese video game franchise created by Toru Iwatani,
+            the father of Pac-Man, but published, developed and owned by Bandai
+            Namco Entertainment.
+          </p>
+          <div class="projectSection__table_innerTable_links">
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/git icon.png"
+              />
+            </a>
+
+            <a
+              class="projectSection__table_innerTable_links_item"
+              href="http://www.google.com"
+            >
+              <img
+                class="projectSection__table_innerTable_picture"
+                src="../pictures/icon.jpeg"
+              />
+            </a>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contactSection" class="contactSection">
+      <h1 class="contactSection__title">Contact</h1>
+      <ul class="contactSection__list">
+        <p class="contactSection__list-title">GitHub</p>
+        <a href="https://github.com/gerden/gerdenPortfolioProject"
+          ><img
+            class="contactSection__list-link"
+            src="../pictures/git icon.png"
+        /></a>
+      </ul>
+      <ul class="contactSection__list">
+        <p class="contactSection__list-title">Email</p>
+        <a href="mailTo:adam.keatley5@gmail.com"
+          ><img class="contactSection__list-link" src="../pictures/email.png"
+        /></a>
+      </ul>
+      <ul class="contactSection__list">
+        <p class="contactSection__list-title">Linked In</p>
+        <a href="https://www.google.com/"
+          ><img
+            class="contactSection__list-link"
+            src="../pictures/linked in.png"
+        /></a>
+      </ul>
+    </section>
   </body>
 </html>
