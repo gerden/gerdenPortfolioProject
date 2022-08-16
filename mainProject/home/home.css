@@ -11,10 +11,9 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: green;
   margin: 0;
   padding: 10px;
-  border: 2px solid white;
 }
 .topMenu_item {
   text-decoration: none;
@@ -22,20 +21,20 @@ body {
 }
 .topMenu_item:hover {
   color: white;
-  background-color: rgb(7, 68, 192);
+  background-color: rgb(7, 90, 19);
   border-radius: 5px;
   padding: 2px;
 }
 
 .intro {
   padding: 10px;
+  background-color: rgb(5, 152, 5);
 }
 .intro__item {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   align-items: center;
-  background-color: #0c111a;
   color: white;
 }
 .intro__item_group {
@@ -46,7 +45,7 @@ body {
 }
 .intro__item_group_button {
   color: rgb(255, 255, 255);
-  background-color: rgb(7, 68, 192);
+  background-color: rgb(7, 90, 19);
   border-radius: 10px;
   padding: 5px;
 }
@@ -57,7 +56,7 @@ body {
 .aboutSection {
   padding: 10px;
   min-height: 100vh;
-  background-color: white;
+  background-color: rgb(105, 218, 130);
   align-items: center;
 }
 .aboutSection__title {
@@ -119,7 +118,7 @@ body {
 
 .skillsSection {
   padding: 10px;
-  background-color: #f2f2f2;
+  background-color: rgb(221, 221, 221);
 }
 .skillsSection__title {
   text-align: center;
@@ -146,7 +145,7 @@ body {
 
 .projectSection {
   padding: 10px;
-  background-color: #b8b8b8;
+  background-color: rgb(5, 152, 5);
 }
 .projectSection__title {
   text-align: center;
@@ -207,8 +206,8 @@ body {
   height: 20px;
 }
 .projectSection__table_innerTable_links_item:hover {
-  background-color: rgb(7, 68, 192);
-  border: rgb(7, 68, 192) solid 3px;
+  background-color: rgb(7, 90, 19);
+  border: rgb(7, 90, 19) solid 3px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -244,11 +243,12 @@ body {
     height: 20px;
   }
   .contactSection__list-link:hover {
-    background-color: rgb(7, 68, 192);
+    background-color: rgb(7, 90, 19);
   }
 }
 @media only screen and (min-width: 801px) {
   .contactSection {
+    background-color: rgb(105, 218, 130);
     padding: 10px;
     align-items: center;
     display: flex;
@@ -279,6 +279,6 @@ body {
     height: 20px;
   }
   .contactSection__list-link:hover {
-    background-color: rgb(7, 68, 192);
+    background-color: rgb(7, 90, 19);
   }
 }
